@@ -6,15 +6,19 @@
 
 1. 본인 브런치로 이동 `git checkout 본인이름`
 2. 본인 브런치에서 작업 후 `git add .`
-3. `git commit -m "[swea]: 문제이름"`
+3. `git commit -m "[swea]: 문제이름"` 또는 알맞은 commit 메세지 작성
 4. `git push origin 본인이름`
 5. github에서 pull request 생성
 
 ### git commit 규칙
 
 - branch 이름은 본인이름 영어로 `ex) seulho`
-- commit 메세지 규칙 `ex) [swea]: 문제 이름` / `[baekjoon]: 문제이름`
-- PR 제목 규칙 `ex) [정슬호] 2023-2-4 문제 제출`
+- commit 메세지 규칙
+  - `ex) [swea]: 문제 이름` / `[baekjoon]: 문제이름`
+  - `ex) Docs: OS 1주차 답변`
+- PR 제목 규칙
+  - `ex) [정슬호] 2023-2-4 문제 제출`
+  - `ex) [정슬호] OS 1주차 답변 제출`
 
 ### 문제 풀이
 
