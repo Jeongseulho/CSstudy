@@ -33,12 +33,12 @@
 1. software를 사용한 가상 메모리 전략의 종류들
 2. paging 시스템에서 reference bit와 update bit
 3. 메모리 관리 성능 향상을 위해 page fault를 최소화 해야 하는 이유, page fault시 일어나는 과정들
-4. software를 사용한 가상 메모리 전략의 종류들
-5. paging 시스템에서 reference bit와 update bit
-6. 메모리 관리 성능 향상을 위해 page fault를 최소화 해야 하는 이유, page fault시 일어나는 과정들
+4. Segmentation system에서 일어날 수 있는 단편화와 이유
+5. Hybrid paging/segmentation system이란 무엇인지.
+6. Paging system과 Segmentation system 각각의 장단점.
 7. Locality(지역성)의 개념과 종류별 특징에 대해 설명하세요.
 8. FIFO 알고리즘의 벨레이디의 모순(Belady's Anomaly)에 대해 설명하세요.
 9. LFU 알고리즘에 대해 설명하세요.
-10. Locality(지역성)의 개념과 종류별 특징에 대해 설명하세요.
-11. FIFO 알고리즘의 벨레이디의 모순(Belady's Anomaly)에 대해 설명하세요.
-12. LFU 알고리즘에 대해 설명하세요.
+10. Working Set 알고리즘을 간단히 서술하시오
+11. Page Fault Frequency 알고리즘을 간단히 서술하시오
+12. 실현 불가능한 Variable MIN 알고리즘을 어디에 사용할 수 있는지 서술
