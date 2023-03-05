@@ -60,3 +60,42 @@
 -Deadlock avoidance는 앞 일을 고려하여 Deadlock이 발생하지 않게 하는 것이고 Deadlock detection은 현재 상태만 고려하여 Deadlock이 발생했을 때 Recovery를 필요로 하는 것이다.
 12. Checkpoint-restart method 에서 checkpoint가 어떻게 활용되는 지
 - 프로세스의 수행 중 특정 지점마다 context를 저장하고 추후 Rollback에서 활용한다.
+
+
+# 4주차
+
+1. software를 사용한 가상 메모리 전략의 종류들
+- Allocation strategies: 프로세스에게 메모리를 얼마만큼 줄 것인지 고려
+- Fetch Strategies: 특정 페이지를 언제 적재할 것인지 고려
+- page/segment를 어디에 적재할 것인지 고려
+- Cleaning strategies : 변경된 페이지를 언제 write-back 할 것인지 고려
+- Load Control strategies : 시스템의 multi-programming degree 조절
+2. paging 시스템에서 reference bit와 update bit
+- reference bit : 메모리에 적재된 각각의 page가 최근에 참조 되었는지를 표시. 참조되면 1로 표시하고, 주기적으로 0으로 초기화 한다.
+- update bit : page가 메모리에 적재된 후에 프로세스에 의해 수정되었는지를 표시한다. 메모리에서 나올 때에 0으로 write back한다.
+3. 메모리 관리 성능 향상을 위해 page fault를 최소화 해야 하는 이유, page fault시 일어나는 과정들
+- page fault가 일어나면 context switching이 발생하여 overhead가 커지기 때문에 최소화해야한다.
+4. Segmentation system에서 일어날 수 있는 단편화와 이유
+- 외부 단편화 발생 가능. 필요한 메모리만 필요할 때에 동적으로 할당하는데, 메모리를 미리 분할하고 할당하지 않았기 때문에 연속되지 않는 빈 메모리 공간이 생길 수 있다.
+5. Hybrid paging/segmentation system이란 무엇인지.
+- paging system과 segmentation system의 장점만 결합하여, paging sharing및 protection이 쉽고 메모리를 관리하고 할당하는데 생기는 overhead가 작다. 외부 단편화가 일어나지 않는다.
+- segment로 프로그램을 분할하는데, 이 각각의 segment를 또 고정된 크기의 page들로 분할하여, page 단위로 메모리에 적재한다.
+- 메모리 소모가 크고, address mapping과정이 복잡하다는 단점이 있다.
+6. Paging system과 Segmentation system 각각의 장단점.
+- paging system은 단순하고, 부하가 적다는 장점을 가지고 있다. 반대로 segmentation system은 부하가 크다는 단점을 가지고 있다.
+- segmentation system은 sharing mechanism이 단순하고 쉽다는 장점을 가지고 있으나, 반대로 paging system은 이것이 복잡하다는 단점이 있다.
+7. Locality(지역성)의 개념과 종류별 특징에 대해 설명하세요.
+- 프로세스가 프로그램이나 데이터의 특정 영역을 집중적으로 참조하는 경향을 일컫는다. 
+- Temporal Locality : 최근에 접근했던 주소값을 다시 접근하는 경향
+- Spartial Locality : 최근에 접근했던 주소값 근처의 주소들에 접근하는 걍행
+8. FIFO 알고리즘의 벨레이디의 모순(Belady's Anomaly)에 대해 설명하세요.
+- page frame을 많이 할당 받는데도, page fault가 증가하는 경향이다. 
+9. LFU 알고리즘에 대해 설명하세요.
+- 가장 참조 횟수가 적은 page를 교체하는 알고리즘으로, page를 참조할 때마다 참조 횟수를 누적하는 과정에서 오버헤드가 발생할 수 있다. 더하여, 참조될 가능성이 높지만 최근에 적재된 page가 교체될 가능성이 있다.
+LRU 알고리즘 대비 오버헤드는 적다.
+10. Working Set 알고리즘을 간단히 서술하시오
+- process가 특정 시점에 자주 참조하는 페이지들의 집합을 working set이라 한다. working set에 속한 페이지는 메모리에 유지하고, 속하지 않은 것은 버린다. page fault수가 적다. 적재되는 page가 없더라도 메모리를 반납하는 page가 있을 수 있으며, 새로 적재되는 page가 있더라도 교체되는 page가 없을 수 있다.
+11. Page Fault Frequency 알고리즘을 간단히 서술하시오
+- page fault rate에 따라 residence set size를 결정하는 알고리즘으로, page fault rate가 작을 때에는 프로세스에 할당된 page frame 수를 감소시키고 반대로 page fault rate가 클 때에는 프로세스에게 할당된 page frame 수를 증가시킨다. 이 기준은 τ라는 임의의 threshold value로 결정한다.
+12. 실현 불가능한 Variable MIN 알고리즘을 어디에 사용할 수 있는지 서술
+-평균적으로 할당한 page frame 수는 다른 알고리즘에 비해 상당히 적다. 때문에 성능 평가의 지표로 사용할 수 있다.
