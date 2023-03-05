@@ -27,3 +27,18 @@
 10. 뱅커스 알고리즘을 간략히 설명하시오
 11. Deadlock avoidance 와 Deadlock detection의 차이
 12. Checkpoint-restart method 에서 checkpoint가 어떻게 활용되는 지
+
+# 4주차
+
+1. software를 사용한 가상 메모리 전략의 종류들
+2. paging 시스템에서 reference bit와 update bit
+3. 메모리 관리 성능 향상을 위해 page fault를 최소화 해야 하는 이유, page fault시 일어나는 과정들
+4. software를 사용한 가상 메모리 전략의 종류들
+5. paging 시스템에서 reference bit와 update bit
+6. 메모리 관리 성능 향상을 위해 page fault를 최소화 해야 하는 이유, page fault시 일어나는 과정들
+7. Locality(지역성)의 개념과 종류별 특징에 대해 설명하세요.
+8. FIFO 알고리즘의 벨레이디의 모순(Belady's Anomaly)에 대해 설명하세요.
+9. LFU 알고리즘에 대해 설명하세요.
+10. Locality(지역성)의 개념과 종류별 특징에 대해 설명하세요.
+11. FIFO 알고리즘의 벨레이디의 모순(Belady's Anomaly)에 대해 설명하세요.
+12. LFU 알고리즘에 대해 설명하세요.
