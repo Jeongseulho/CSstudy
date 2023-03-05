@@ -46,6 +46,10 @@
 - [swea] 그래프경로
 - [swea] 비밀번호
 - [swea] 우주선착륙2
+- [swea] magnetic
+- [swea] 농작물 수확하기
+- [swea] 스도쿠 검증
+- [swea] 풍선팡2
 
 ## 📌CS 스터디
 
