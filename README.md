@@ -52,6 +52,11 @@
 - [swea] 농작물 수확하기
 - [swea] 스도쿠 검증
 - [swea] 풍선팡2
+- [baekjoon] 덩치
+- [baekjoon] 영화감독 숌
+- [baekjoon] 설탕 배달
+- [baekjoon] 별 찍기 - 10
+- [baekjoon] 체스판 다시 칠하기
 
 ## 📌CS 스터디
 
