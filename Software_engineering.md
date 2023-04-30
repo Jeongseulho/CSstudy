@@ -30,3 +30,21 @@
 10. 요구사항은 누구로부터 얻을 수 있는가?
 11. 요구사항 추출에서 나올 수 있는 문제
 12. 요구사항에 우선순위를 매기는 이유
+
+# 3주차
+
+1. 클라이언트-서버 아키텍처란
+2. MVC 아키텍처란
+3. Facade design이란 무엇인가
+4. 클래스간의 포함관계와 합성관계의 차이는
+5. 클래스간의 연관관계와 의존관계의 차이는
+6. Control Class에 대해
+7. Event-driven Control의 장단점은
+8. Repository Architecture란
+9. Pipe and Filter Architecture의 특징은
+10. 아키텍처 설계에 대해 설명하세요.
+11. Splitting our reads and write 아키텍처의 특징은?
+12. 보안성을 늘리기 위해 사용하는 아키텍처가 무엇인지 설명하세요
+13. Activity Diagram의 특징
+14. Sequence Diagram의 특징
+15. State Diagram의 특징
