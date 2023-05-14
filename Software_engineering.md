@@ -63,3 +63,18 @@
 10. 단일 객체 패턴에 대해 설명하세요.
 11. 어댑터 패턴에 대해 설명하세요.
 12. 컴포짓 패턴에 대해 설명하세요.
+
+# 5주차
+
+1. iterator pattern
+2. observer pattern
+3. state pattern
+4. 화이트박스 테스트란
+5. branch coverage와 condition coverage를 비교하시
+6. MC/DC coverage
+7. 인스펙션에 대해서 설명하세요.
+8. 테스트 드라이버와 테스트 스텁에 대해서.
+9. 테스팅과 디버깅의 차이는?
+10. 블랙박스 테스팅과 화이트 박스 테스팅의 특징과 차이에 대해 설명하세요.
+11. 블랙박스 테스팅의 장점에 대해 설명하세요.
+12. create/select test case의 3종류에 대해 설명하세요.
